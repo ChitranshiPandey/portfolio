@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chitranshi Pandey — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="logo">Chitranshi <span>Pandey</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#figma">Designs</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="nav-btn" href="images/resume.pdf" download="Chitranshi_Pandey_Resume.pdf">Download Resume ↓</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge"><span class="badge-dot"></span>3rd Year CSE Student</div>
+        <h1 class="hero-name">CHITRANSHI<span class="name-blue">PANDEY</span></h1>
+        <div class="hero-roles">
+          <span class="role-pill">Web Developer</span>
+          <span class="role-pill">Frontend Developer</span>
+          <span class="role-pill">UI/UX Designer</span>
+        </div>
+        <p class="hero-desc">I love building aesthetic digital experiences where technology meets design. Passionate about creating solutions that are functional, beautiful and impactful.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View My Work →</a>
+          <a href="#contact" class="btn-outline">Let's Connect</a>
+        </div>
+        <div class="hero-contacts">
+          <a href="#">📍 Indore, Madhya Pradesh</a>
+          <a href="mailto:chitranshipandey84@gmail.com">✉ chitranshipandey84@gmail.com</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="photo-frame-wrapper">
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div>
+          <div class="corner corner-br"></div>
+          <div class="photo-glow"></div>
+          <div class="photo-frame">
+            <img src="images/me.jpg" alt="Chitranshi Pandey" id="myPhoto" />
+            <div class="photo-placeholder" id="photoPlaceholder">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="24" r="14" stroke="#3b82f6" stroke-width="2"/>
+                <path d="M8 56c0-13.3 10.7-24 24-24s24 10.7 24 24" stroke="#3b82f6" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <p>Put <strong>me.jpg</strong> in <strong>images/</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="skill-badges">
+          <span class="badge">⚛ React</span>
+          <span class="badge">🎨 UI/UX</span>
+          <span class="badge">▲ Next.js</span>
+          <span class="badge">✏ Figma</span>
+          <span class="badge">💡 Creative Dev</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <div class="scroll-mouse"><span></span></div>
+      SCROLL DOWN
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-single reveal">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Get to know me<span class="dot">!</span></h2>
+        <p class="about-text">I'm a third-year Computer Science and Engineering student with a strong interest in Web Development and UI/UX Design. I enjoy turning ideas into interactive, user-centered digital experiences.</p>
+        <p class="about-text">I'm a quick learner with a problem-solving mindset, creative approach and a passion for continuous learning and innovation.</p>
+        <a href="#contact" class="btn-primary" style="margin-top:1.5rem;display:inline-flex;">More About Me →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">My Tech Stack</p>
+        <h2 class="section-title">Skills &amp; Interests<span class="dot"> •</span></h2>
+        <p class="section-sub">Technologies and tools I work with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">🖥</div>
+          <h3 class="skill-title">Frontend Dev</h3>
+          <ul class="skill-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>React</li><li>Next.js</li><li>TypeScript</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚙</div>
+          <h3 class="skill-title">Backend &amp; Web</h3>
+          <ul class="skill-list">
+            <li>Node.js</li><li>Express.js</li><li>REST APIs</li><li>Node-EJS</li><li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3 class="skill-title">Languages</h3>
+          <ul class="skill-list"><li>Java</li><li>Python</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3 class="skill-title">Design &amp; Tools</h3>
+          <ul class="skill-list">
+            <li>Figma</li><li>Canva</li><li>Adobe Express</li><li>VS Code</li><li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Featured Work</p>
+        <h2 class="section-title">Projects<span class="dot"> •</span></h2>
+        <p class="section-sub">Click any project to visit the live site</p>
+      </div>
+      <div class="projects-grid">
+
+        <a class="project-card reveal" href="https://internx1.vercel.app/" target="_blank" rel="noopener">
+          <div class="project-img">
+            <img src="images/project-internx.png" alt="InternX" class="project-screenshot" />
+            <div class="project-hover-overlay"><span>Visit Live ↗</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="ptag">Next.js</span><span class="ptag">TypeScript</span><span class="ptag">Firebase</span><span class="ptag">Tailwind CSS</span></div>
+            <h3 class="project-title">InternX</h3>
+            <p class="project-desc">A modern internship platform with authentication, onboarding flow and real-time dashboards. Helps students find internships that build their future.</p>
+          </div>
+        </a>
+
+        <!-- Replace YOUR-PIZZA-LINK-HERE with your actual link -->
+        <a class="project-card reveal" href="https://YOUR-PIZZA-LINK-HERE" target="_blank" rel="noopener">
+          <div class="project-img">
+            <img src="images/project-pizza.png" alt="La Vera Pizza" class="project-screenshot" />
+            <div class="project-hover-overlay"><span>Visit Live ↗</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JavaScript</span></div>
+            <h3 class="project-title">La Vera Pizza</h3>
+            <p class="project-desc">A responsive pizza website with interactive menus, beautiful UI and engaging animations. Delivers authentic Italian pizza vibes digitally.</p>
+          </div>
+        </a>
+
+        <a class="project-card reveal" href="https://vizly-one.vercel.app/" target="_blank" rel="noopener">
+          <div class="project-img">
+            <img src="images/project-vizly.png" alt="Vizly" class="project-screenshot" />
+            <div class="project-hover-overlay"><span>Visit Live ↗</span></div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags"><span class="ptag">Next.js</span><span class="ptag">React</span><span class="ptag">Tailwind CSS</span><span class="ptag">Groq AI</span><span class="ptag">Supabase</span><span class="ptag">Clerk</span></div>
+            <h3 class="project-title">Vizly ✨</h3>
+            <p class="project-desc">An AI-powered visual learning app that transforms any topic into cinematic scenes with voice narration, smart notes, interactive quizzes and a global leaderboard.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FIGMA DESIGNS ===== -->
+  <section id="figma">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">UI/UX Design Work</p>
+        <h2 class="section-title">Figma Designs<span class="dot"> •</span></h2>
+        <p class="section-sub">Interactive prototypes — click image or button to explore live</p>
+      </div>
+
+      <!-- FIGMA PROJECT 1: Ice Cream -->
+      <div class="figma-project reveal">
+        <div class="figma-project-img">
+          <img src="images/figma-icecream.png" alt="Ice Cream Website Design" class="figma-screenshot" />
+          <div class="figma-img-placeholder icecream-placeholder">
+            <span>🍦</span><p>Add figma-icecream.png<br>to images/ folder</p>
+          </div>
+          <div class="figma-img-overlay">
+            <a href="https://www.figma.com/proto/TcKkSK1VwMR53DGT6PARpq/Untitled?node-id=74-62&starting-point-node-id=74%3A62&t=cNHdGntzLtAe9uZW-1" target="_blank" class="figma-live-btn">View Prototype ↗</a>
+          </div>
+        </div>
+        <div class="figma-project-info">
+          <div class="figma-project-number">01</div>
+          <div class="figma-label-row"><span class="figma-type-badge">🍦 UI/UX Design</span></div>
+          <h3 class="figma-project-title">Ice Cream Brand Website</h3>
+          <p class="figma-project-desc">An interactive and visually engaging ice cream brand website focused on creating a fun and personalized user experience. Users can explore a variety of flavors, customize their own cones, and interact with playful UI elements.</p>
+          <p class="figma-project-desc" style="margin-top:.8rem">Special attention was given to color psychology, micro-interactions, user flow, and creating a youthful, energetic brand identity.</p>
+          <div class="figma-highlights">
+            <div class="fh-item">✦ Interactive flavor exploration experience</div>
+            <div class="fh-item">✦ Custom "Build Your Own Cone" feature</div>
+            <div class="fh-item">✦ Modern UI with playful micro-animations</div>
+            <div class="fh-item">✦ User-centered navigation &amp; layouts</div>
+          </div>
+          <div class="figma-tools">
+            <span class="ftag">Figma</span><span class="ftag">UI/UX Principles</span><span class="ftag">Prototyping</span><span class="ftag">Brand Identity</span>
+          </div>
+          <a href="https://www.figma.com/proto/TcKkSK1VwMR53DGT6PARpq/Untitled?node-id=74-62&starting-point-node-id=74%3A62&t=cNHdGntzLtAe9uZW-1" target="_blank" class="btn-primary" style="margin-top:1.5rem;display:inline-flex;">View Prototype ↗</a>
+        </div>
+      </div>
+
+      <div class="figma-divider reveal"></div>
+
+      <!-- FIGMA PROJECT 2: Swiggy -->
+      <div class="figma-project figma-project-reverse reveal">
+        <div class="figma-project-img">
+          <img src="images/figma-swiggy.png" alt="Swiggy Instamart Redesign" class="figma-screenshot" />
+          <div class="figma-img-placeholder swiggy-placeholder">
+            <span>🛒</span><p>Add figma-swiggy.png<br>to images/ folder</p>
+          </div>
+          <div class="figma-img-overlay">
+            <a href="https://www.figma.com/proto/4WbFo4W4Vh24a8U0kHgO9t/Untitled?node-id=1-2&starting-point-node-id=1%3A2&t=552IsCGA8XBq0qOa-1" target="_blank" class="figma-live-btn">View Prototype ↗</a>
+          </div>
+        </div>
+        <div class="figma-project-info">
+          <div class="figma-project-number">02</div>
+          <div class="figma-label-row"><span class="figma-type-badge">🛒 UI/UX Redesign</span></div>
+          <h3 class="figma-project-title">Swiggy Instamart Redesign</h3>
+          <p class="figma-project-desc">A complete UI redesign of Swiggy Instamart introducing a new feature aimed at improving the efficiency and accessibility of quick commerce services. Focuses on usability, speed, and intuitive navigation.</p>
+          <p class="figma-project-desc" style="margin-top:.8rem">The newly integrated Quick Services feature was conceptualized to improve how users interact with rapid delivery, making shopping smarter and smoother.</p>
+          <div class="figma-highlights">
+            <div class="fh-item">✦ Complete UI redesign for better UX</div>
+            <div class="fh-item">✦ New Quick Services accessibility feature</div>
+            <div class="fh-item">✦ Improved user flow &amp; navigation structure</div>
+            <div class="fh-item">✦ Functional high-fidelity prototype</div>
+          </div>
+          <div class="figma-tools">
+            <span class="ftag">Figma</span><span class="ftag">UX Research</span><span class="ftag">Wireframing</span><span class="ftag">Prototyping</span>
+          </div>
+          <a href="https://www.figma.com/proto/4WbFo4W4Vh24a8U0kHgO9t/Untitled?node-id=1-2&starting-point-node-id=1%3A2&t=552IsCGA8XBq0qOa-1" target="_blank" class="btn-primary" style="margin-top:1.5rem;display:inline-flex;">View Prototype ↗</a>
+        </div>
+      </div>
+
+      <div class="figma-divider reveal"></div>
+
+      <!-- FIGMA PROJECT 3: Red Bull -->
+      <div class="figma-project reveal">
+        <div class="figma-project-img">
+          <!--
+            IMPORTANT: Your file is saved as "figma-redbull.png.png" (double extension)
+            Rename it in VS Code to just: figma-redbull.png
+            Right-click the file → Rename → remove the extra .png
+          -->
+          <img src="images/figma-redbull.png" alt="Red Bull Website Design" class="figma-screenshot" />
+          <div class="figma-img-placeholder redbull-placeholder">
+            <span>⚡</span><p>Rename figma-redbull.png.png<br>to figma-redbull.png</p>
+          </div>
+          <div class="figma-img-overlay">
+            <a href="https://www.figma.com/proto/dFZeQ72KDucVPYEc4aHkEZ/Untitled?node-id=32-2&starting-point-node-id=32%3A2&t=o7rAbKHrJGSsoB6m-1" target="_blank" class="figma-live-btn">View Prototype ↗</a>
+          </div>
+        </div>
+        <div class="figma-project-info">
+          <div class="figma-project-number">03</div>
+          <div class="figma-label-row"><span class="figma-type-badge">⚡ Animated UI Design</span></div>
+          <h3 class="figma-project-title">Red Bull — Animated Website Design</h3>
+          <p class="figma-project-desc">Designed an interactive prototype interface for Red Bull using Figma, where different flavors were showcased through smooth animations and engaging transitions. The project focused on creating a dynamic user experience by combining modern UI design with interactive motion effects.</p>
+          <p class="figma-project-desc" style="margin-top:.8rem">Each flavor was presented with unique visuals, color themes, and animated interactions to make the interface visually immersive and appealing — emphasizing creativity, branding consistency, and user engagement.</p>
+          <div class="figma-highlights">
+            <div class="fh-item">✦ Flavor showcase with unique color themes</div>
+            <div class="fh-item">✦ Smooth animations &amp; engaging transitions</div>
+            <div class="fh-item">✦ Branding consistency &amp; visual storytelling</div>
+            <div class="fh-item">✦ Interactive motion &amp; immersive prototype</div>
+          </div>
+          <div class="figma-tools">
+            <span class="ftag">Figma</span><span class="ftag">Motion Design</span><span class="ftag">Prototyping</span><span class="ftag">Brand Design</span>
+          </div>
+          <a href="https://www.figma.com/proto/dFZeQ72KDucVPYEc4aHkEZ/Untitled?node-id=32-2&starting-point-node-id=32%3A2&t=o7rAbKHrJGSsoB6m-1" target="_blank" class="btn-primary" style="margin-top:1.5rem;display:inline-flex;">View Prototype ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements">
+    <div class="container">
+      <div class="reveal">
+        <p class="section-label">Achievements</p>
+        <h2 class="section-title">Hackathons &amp; Competitions<span class="dot"> •</span></h2>
+        <p class="section-sub">Click any card to see the certificate</p>
+      </div>
+      <div class="achieve-grid">
+
+        <div class="achieve-card reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="achieve-icon red">🎨</div>
+              <div class="achieve-name">Adobe Hackathon</div>
+              <div class="achieve-sub">Aug 2025</div>
+              <div class="flip-hint">↺ Tap to see certificate</div>
+            </div>
+            <div class="card-back">
+              <img src="images/cert-adobe.png" alt="Adobe Certificate" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="cert-no-img">Add cert-adobe.png<br>to images/ folder</div>
+              <div class="cert-label">Adobe Hackathon 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="achieve-icon blue">✏</div>
+              <div class="achieve-name">Design Odyssey</div>
+              <div class="achieve-sub">IIT Indore (Aug 2025)</div>
+              <div class="flip-hint">↺ Tap to see certificate</div>
+            </div>
+            <div class="card-back">
+              <img src="images/cert-design-odyssey.png" alt="Design Odyssey Cert" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="cert-no-img">Add cert-design-odyssey.png<br>to images/ folder</div>
+              <div class="cert-label">Design Odyssey — IIT Indore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="achieve-icon cyan">💻</div>
+              <div class="achieve-name">Build-exe Hackathon</div>
+              <div class="achieve-sub">Nagpur</div>
+              <div class="flip-hint">↺ Tap to see certificate</div>
+            </div>
+            <div class="card-back">
+              <img src="images/cert-buildexe.png" alt="Build-exe Cert" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="cert-no-img">Add cert-buildexe.png<br>to images/ folder</div>
+              <div class="cert-label">Build-exe Hackathon — Nagpur</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="achieve-icon purple">⚡</div>
+              <div class="achieve-name">HackVento Hackathon</div>
+              <div class="achieve-sub">IET DAVV Indore (Jan 2025)</div>
+              <div class="flip-hint">↺ Tap to see certificate</div>
+            </div>
+            <div class="card-back">
+              <img src="images/cert-hackvento.png" alt="HackVento Cert" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="cert-no-img">Add cert-hackvento.png<br>to images/ folder</div>
+              <div class="cert-label">HackVento — IET DAVV Indore</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="achieve-icon green">🌊</div>
+              <div class="achieve-name">Dreamflow Buildathon</div>
+              <div class="achieve-sub"></div>
+              <div class="flip-hint">↺ Tap to see certificate</div>
+            </div>
+            <div class="card-back">
+              <img src="images/cert-dreamflow.png" alt="Dreamflow Cert" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="cert-no-img">Add cert-dreamflow.png<br>to images/ folder</div>
+              <div class="cert-label">Dreamflow Buildathon</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <div class="achieve-icon orange">🎓</div>
+              <div class="achieve-name">Naukri Campus</div>
+              <div class="achieve-sub">Young Turks (Sept 2025)</div>
+              <div class="flip-hint">↺ Tap to see certificate</div>
+            </div>
+            <div class="card-back">
+              <img src="images/cert-naukri.png" alt="Naukri Cert" class="cert-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="cert-no-img">Add cert-naukri.png<br>to images/ folder</div>
+              <div class="cert-label">Naukri Campus — Young Turks</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <p class="section-label">Get In Touch</p>
+          <h2 class="section-title">Let's Connect<span class="dot">!</span></h2>
+          <p class="about-text">Have a project in mind or want to collaborate? Messages go straight to my inbox — I'd love to hear from you.</p>
+          <div class="social-links">
+            <a href="mailto:chitranshipandey84@gmail.com" class="social-btn">✉ Email</a>
+            <a href="https://www.linkedin.com/in/chitranshi-pandey/" target="_blank" class="social-btn">in LinkedIn</a>
+            <a href="https://github.com/ChitranshiPandey" target="_blank" class="social-btn">⌥ GitHub</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-field"><label for="senderName">Your Name</label><input type="text" id="senderName" placeholder="Your name" /></div>
+              <div class="form-field"><label for="senderEmail">Your Email</label><input type="email" id="senderEmail" placeholder="your@email.com" /></div>
+            </div>
+            <div class="form-field"><label for="senderMessage">Your Message</label><textarea id="senderMessage" rows="5" placeholder="Hi! I'd love to collaborate on..."></textarea></div>
+            <button class="btn-primary" id="sendBtn" onclick="sendMessage()">Send Message ✈</button>
+            <p id="formStatus" class="form-status"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="foot-logo">Chitranshi <span>Pandey</span></div>
+    <p>© 2025 Chitranshi Pandey. All rights reserved. Built with ❤</p>
+    <a href="#hero" class="back-top">Back to Top ↑</a>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
